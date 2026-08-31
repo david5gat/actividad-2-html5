@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Recetas de la Abuela, un blog dedicado a compartir recetas de cocina tradicionales y caseras.">
+
+    <title>Recetas de la Abuela | Blog de Cocina</title>
+</head>
+
+<body>
+
+<!--
+    HEADER:
+    Contiene la información principal de identificación
+    de la página y la navegación principal.
+-->
+<header>
+    <h1>Recetas de la Abuela</h1>
+
+    <p>
+        Un rincón para compartir recetas tradicionales y caseras,
+        fáciles de preparar en cualquier cocina.
+    </p>
+
+    <!--
+        NAV:
+        Contiene los enlaces principales de navegación.
+        Puede utilizarse mediante teclado.
+    -->
+    <nav aria-label="Navegación principal">
+        <ul>
+            <li>
+                <a href="#inicio">Inicio</a>
+            </li>
+
+            <li>
+                <a href="#recetas">Recetas</a>
+            </li>
+
+            <li>
+                <a href="#nosotros">Sobre nosotros</a>
+            </li>
+
+            <li>
+                <a href="#contacto">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<!--
+    MAIN:
+    Contiene todo el contenido principal de la página.
+-->
+<main>
+
+    <!--
+        SECTION:
+        Sección de presentación del blog.
+    -->
+    <section id="inicio" aria-labelledby="titulo-inicio">
+
+        <h2 id="titulo-inicio">
+            Bienvenido a Recetas de la Abuela
+        </h2>
+
+        <p>
+            Recetas de la Abuela es un espacio pensado para quienes
+            disfrutan de la cocina casera y quieren aprender platillos
+            sencillos con ingredientes de siempre.
+        </p>
+
+        <!--
+            La imagen utiliza el atributo alt para proporcionar
+            una descripción a usuarios que utilizan lectores de pantalla.
+        -->
+        <img
+            src="assets/receta-principal.jpg"
+            alt="Plato de comida casera recién preparado sobre una mesa de madera"
+            width="600"
+            height="400"
+        >
+
+    </section>
+
+
+    <!--
+        SECTION:
+        Contiene información sobre las recetas disponibles.
+    -->
+    <section id="recetas" aria-labelledby="titulo-recetas">
+
+        <h2 id="titulo-recetas">
+            Nuestras recetas
+        </h2>
+
+        <p>
+            Estas son algunas de las categorías de recetas que
+            encontrarás en el blog.
+        </p>
+
+        <ul>
+            <li>Sopas y caldos caseros.</li>
+            <li>Platos principales tradicionales.</li>
+            <li>Postres y repostería.</li>
+            <li>Recetas rápidas para el día a día.</li>
+        </ul>
+
+    </section>
+
+
+    <!--
+        ARTICLE:
+        Contiene información independiente sobre el blog.
+    -->
+    <article id="nosotros" aria-labelledby="titulo-nosotros">
+
+        <h2 id="titulo-nosotros">
+            Sobre nosotros
+        </h2>
+
+        <p>
+            Este blog nace del deseo de conservar las recetas
+            familiares y compartirlas con quienes quieran aprender
+            a cocinar platillos con historia.
+        </p>
+
+        <p>
+            Cada receta publicada ha sido probada en casa antes de
+            compartirla, para asegurar que el resultado sea siempre
+            el esperado.
+        </p>
+
+    </article>
+
+
+    <!--
+        ASIDE:
+        Contiene información complementaria relacionada
+        con el contenido principal.
+    -->
+    <aside aria-labelledby="titulo-utensilios">
+
+        <h2 id="titulo-utensilios">
+            Utensilios básicos
+        </h2>
+
+        <p>
+            Algunos utensilios recomendados para seguir nuestras recetas:
+        </p>
+
+        <ul>
+            <li>Olla de fondo grueso</li>
+            <li>Sartén antiadherente</li>
+            <li>Batidora de mano</li>
+            <li>Tabla de cortar</li>
+            <li>Balanza de cocina</li>
+        </ul>
+
+    </aside>
+
+
+    <!--
+        SECTION:
+        Contiene el formulario de contacto.
+    -->
+    <section id="contacto" aria-labelledby="titulo-contacto">
+
+        <h2 id="titulo-contacto">
+            Contacto
+        </h2>
+
+        <p>
+            Si tienes dudas sobre alguna receta o quieres sugerir
+            un platillo, escríbenos usando el siguiente formulario.
+        </p>
+
+        <!--
+            FORM:
+            Cada campo tiene un label asociado correctamente
+            mediante los atributos for e id.
+        -->
+        <form action="#" method="post">
+
+            <div>
+                <label for="nombre">
+                    Nombre:
+                </label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="correo">
+                    Correo electrónico:
+                </label>
+
+                <input
+                    type="email"
+                    id="correo"
+                    name="correo"
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="mensaje">
+                    Mensaje:
+                </label>
+
+                <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    rows="5"
+                    cols="40"
+                    required
+                ></textarea>
+            </div>
+
+            <button type="submit">
+                Enviar mensaje
+            </button>
+
+        </form>
+
+    </section>
+
+</main>
+
+
+<!--
+    FOOTER:
+    Contiene información adicional de la página.
+-->
+<footer>
+
+    <p>
+        &copy; 2026 Recetas de la Abuela. Todos los derechos reservados.
+    </p>
+
+    <p>
+        Actividad universitaria - Implementación de una página HTML5 básica.
+    </p>
+
+</footer>
+</body>
+</html>
